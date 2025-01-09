@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onClick="addDiv()">click me</button>
+    <script>
+      let div1 = document.createElement("div");
+      let image = document.createElement("img");
+      let title = document.createElement("header");
+      let desc1 = document.createElement("desc");
+      let desc2 = document.createElement("desc");
+      let desc3 = document.createElement("desc");
+      let desc4 = document.createElement("desc");
+      function addDiv() {
+        div1.style.color = "blue";
+        div1.style.backgroundColor = "orange";
+        div1.style.border = "2px solid green";
+        div1.style.height = "350px";
+        div1.style.width = "250px";
+        div1.style.padding = "25px";
+        div1.style.borderRadius = "50px";
+        document.body.appendChild(div1);
+
+        image.setAttribute("src", "/pspk.webp");
+        image.style.height = "50%";
+        image.style.width = "50%";
+        image.style.padding = "50px";
+        div1.appendChild(image);
+
+        title.innerHTML = "PAWAN KALYAAN";
+        title.style.justifyItems = "center";
+        title.style.marginLeft = "15px";
+        title.style.height = "50px";
+        title.style.marginTop = "-20px";
+        title.style.fontSize = "24px";
+        div1.appendChild(title);
+
+        desc1.innerHTML = "SURNAME:OG";
+        desc1.style.marginLeft="40px"
+        div1.appendChild(desc1);
+
+        desc2.innerHTML = "DESIG.:DEPUTY CM";
+         desc2.style.marginLeft="40px"
+        div1.appendChild(desc2);
+        desc3.innerHTML = "phn no.6301*993*";
+        div1.appendChild(desc3);
+        desc4.innerHTML = "Blood Group:PAWANISMM";
+        div1.appendChild(desc4);
+      }
+    </script>
+  </body>
+</html>
